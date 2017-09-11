@@ -109,7 +109,7 @@ def main(target_im):
     # enter their first and last name, or grade. all optional fields.
     fn = 'Aman'
     ln = None
-    gr = '12'
+    gr = None
     possible_ids = find_person(known_students, firstname=fn, lastname=ln, grade=gr)
     print(known_students[possible_ids].astype(str))
     print('Your distance value was {}'.format(distances[possible_ids]))
